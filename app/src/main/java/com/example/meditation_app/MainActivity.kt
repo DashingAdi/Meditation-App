@@ -158,7 +158,7 @@ class MainActivity : ComponentActivity() {
     fun FilterOptionsComponent() {
         val filterOptions = FILTER_CONTENT_LIST
         LazyRow(
-            Modifier.padding(top = 15.dp, start = 15.dp),
+            Modifier.padding(top = 15.dp, start = 15.dp, end = 15.dp),
             horizontalArrangement = Arrangement.spacedBy(15.dp)
         ) {
             items(filterOptions.size) {
@@ -190,7 +190,7 @@ class MainActivity : ComponentActivity() {
     fun MeditationTypesComponent() {
         val meditationOptions = MEDITATION_TYPE_LIST
         LazyColumn(
-            Modifier.padding(top = 15.dp, start = 15.dp, end = 15.dp),
+            Modifier.padding(top = 15.dp, start = 15.dp, end = 15.dp, bottom = 15.dp),
             verticalArrangement = Arrangement.spacedBy(15.dp)
         ) {
             items(meditationOptions.size) {
