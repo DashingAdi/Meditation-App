@@ -41,7 +41,6 @@ This app was created by [Me](github.com/DashingAdi). Thanks to the following res
 
 - [Jetpack Compose documentation](https://developer.android.com/jetpack/compose)
 - [Android Kotlin Fundamentals codelabs](https://developer.android.com/courses/kotlin-android-fundamentals/overview)
-- [Breens Robert](github.com/Breens-Mbaka)
 
 ## License
 
