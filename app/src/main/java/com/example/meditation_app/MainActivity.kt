@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
@@ -44,6 +45,7 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import com.example.meditation_app.ui.theme.FILTER_CONTENT_LIST
 import com.example.meditation_app.ui.theme.FilterContent
@@ -113,9 +115,13 @@ class MainActivity : ComponentActivity() {
                 }
             }
 
-            BadgedBox(badge = { Badge( containerColor = Color.Green ) }) {
+            BadgedBox(badge = { Badge(
+                containerColor = Color.Green,
+                modifier = Modifier.offset(x=(-11).dp,y=(5).dp)
+            ) }) {
                 Icon(
                     Icons.Default.Notifications,
+
                     contentDescription = "Notification Icon",
                 )
             }
